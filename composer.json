@@ -1,0 +1,23 @@
+{
+    "name": "baytek/eft",
+    "description": "Package for Generating 80 byte EFT files",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yvon Viger",
+            "email": "yvon@baytek.ca"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Baytek\\Commerce\\EFT\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
