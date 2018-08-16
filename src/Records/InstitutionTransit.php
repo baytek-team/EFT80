@@ -15,7 +15,7 @@ class InstitutionTransit extends Record
     {
         $this->position = $position;
         $this->size = 9;
-        $this->validator = new NumericValidator($this->size);
+        $this->validator = new NumericValidator();
     }
 
 }

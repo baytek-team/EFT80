@@ -15,7 +15,6 @@ class CPACode extends Record
     {
         $this->position = $position;
         $this->size = 3;
-        $this->validator = new AlphaNumericValidator($this->size);
+        $this->validator = new AlphaNumericValidator();
     }
-
 }

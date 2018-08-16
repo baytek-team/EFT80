@@ -7,13 +7,6 @@ use Baytek\Commerce\EFT\Validators\Validator;
 abstract class Record
 {
     /**
-     * Has the object been touched
-     *
-     * @var bool
-     */
-    protected $dirty = false;
-
-    /**
      * The record value
      *
      * @var mixed
@@ -37,7 +30,7 @@ abstract class Record
     /**
      * Validator class
      *
-     * @var AlplaValidator
+     * @var Baytek\Commerce\EFT\Validators\Validator
      */
     protected $validator;
 
@@ -59,7 +52,6 @@ abstract class Record
     public function set($value)// : void
     {
         $this->value = $value;
-        $this->dirty = true;
     }
 
     /**
@@ -99,15 +91,12 @@ abstract class Record
      */
     public function valid(): bool 
     {
-        return true;
-        if (is_callable($this->validator)) {
+        if (method_exists($this, 'validator')) {
             return $this->validator();
         } elseif ($this->validator instanceof Validator) {
             return $this->validator->validate($this);
         } else {
             return true;
         }
-
-        
     }
 }

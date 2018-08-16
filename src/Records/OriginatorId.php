@@ -17,7 +17,7 @@ class OriginatorId extends Record
         $this->position = $position;
         $this->size = $size;
 
-        $this->validator = new AlphaValidator($size);
+        $this->validator = new AlphaValidator();
     }
 
     /**

@@ -16,7 +16,7 @@ class CustomValue extends Record
     {
         $this->position = $position;
         $this->size = $size;
-        $this->validator = new AlphaNumericValidator($this->size);
+        $this->validator = new AlphaNumericValidator();
     }
 
     /**
@@ -28,5 +28,4 @@ class CustomValue extends Record
     {
         return substr(str_pad($this->value, $this->size), 0, $this->size);
     }
-
 }

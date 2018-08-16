@@ -19,8 +19,15 @@ class Amount extends Record
         $this->validator = new NumericValidator();
     }
 
+    /**
+     * Set the value override
+     *
+     * @param string $value
+     * 
+     * @return void
+     */
     public function set($value)
     {
-        parent::set(str_pad($value, $this->size, "0", STR_PAD_LEFT));
+        parent::set(str_pad($value, $this->size, '0', STR_PAD_LEFT));
     }
 }

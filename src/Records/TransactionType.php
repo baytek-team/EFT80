@@ -15,6 +15,6 @@ class TransactionType extends Record
     {
         $this->position = $position;
         $this->size = 1;
-        $this->validator = new AlphaValidator($this->size);
+        $this->validator = new AlphaValidator();
     }
 }

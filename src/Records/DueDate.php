@@ -4,6 +4,8 @@ namespace Baytek\Commerce\EFT\Records;
 
 use Baytek\Commerce\EFT\Validators\NumericValidator;
 
+use DateTime;
+
 class DueDate extends Record
 {
     /**
@@ -16,7 +18,27 @@ class DueDate extends Record
     {
         $this->position = $position;
         $this->size = 6;
-        $this->validator = new NumericValidator($this);
+        // $this->validator = new NumericValidator();
     }
 
+    /**
+     * Validate the field
+     *
+     */
+    public function validator()
+    {
+        if (strlen($this->value) !== 6) {
+            return false;
+        }
+        
+        $date = $this->value;
+        $format = 'dmy';
+        $d = DateTime::createFromFormat('dmy', $date);
+
+        if ($d && $d->format($format) !== $date) {
+            return false;
+        }
+
+        return true;
+    }
 }

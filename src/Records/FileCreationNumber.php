@@ -16,10 +16,15 @@ class FileCreationNumber extends Record
         $this->size = 4;
     }
 
-
-    public function set($value)
+    /**
+     * Set the value override
+     *
+     * @param string $value
+     * 
+     * @return void
+     */
+    public function set($value)// :void
     {
-        parent::set(str_pad($value, $this->size, "0", STR_PAD_LEFT));
+        parent::set(str_pad($value, $this->size, '0', STR_PAD_LEFT));
     }
-
 }
