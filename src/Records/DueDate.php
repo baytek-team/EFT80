@@ -18,7 +18,7 @@ class DueDate extends Record
     {
         $this->position = $position;
         $this->size = 6;
-        // $this->validator = new NumericValidator();
+        $this->value = str_repeat(' ', $this->size);
     }
 
     /**

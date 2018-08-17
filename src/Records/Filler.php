@@ -17,5 +17,4 @@ class Filler extends Record
         $this->size = $size;
         $this->value = str_repeat(' ', $this->size);
     }
-
 }
