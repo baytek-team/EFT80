@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 
+## [1.0.3] - 2018-08-16
+### Fixed
+- Tagging for ability to composer update
+
+## [1.0.2] - 2018-08-16
+### Fixed
+- Fixed class names and other minor things
+
 ## [1.0.1] - 2018-08-16
 ### Added
 - Split the institutionTransit class into two classes Institution and Transit
