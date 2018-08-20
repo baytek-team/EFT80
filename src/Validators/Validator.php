@@ -22,9 +22,8 @@ abstract class Validator
         }
 
         if (strlen($record->value()) != $record->size()) {
-            throw new Exception('The record value is not the correct size or missing');
+            throw new Exception(get_class($record) . ' is not the correct size or is missing');
         }
-
 
         return true;
     }

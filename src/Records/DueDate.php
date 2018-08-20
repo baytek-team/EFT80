@@ -3,7 +3,6 @@
 namespace Baytek\Commerce\EFT\Records;
 
 use Baytek\Commerce\EFT\Validators\NumericValidator;
-
 use DateTime;
 
 class DueDate extends Record

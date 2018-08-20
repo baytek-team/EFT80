@@ -2,7 +2,6 @@
 
 namespace Baytek\Commerce\EFT\Records;
 
-
 class Filler extends Record
 {
     /**
