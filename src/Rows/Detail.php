@@ -23,7 +23,8 @@ class Detail extends Row
             'name' => new CustomValue(2, 23),
             'dueDate' => new DueDate(25),
             'referenceNumber' => new CustomValue(31, 19),
-            'institutionTransit' => new InstitutionTransit(50),
+            'institution' => new Institution(50),
+            'transit' => new Transit(54),
             'account' => new AccountNumber(59),
             'amount' => new Amount(71, 10),
         ];
