@@ -5,7 +5,8 @@ namespace Baytek\Commerce\EFT\Rows;
 use Baytek\Commerce\EFT\Records\RecordType;
 use Baytek\Commerce\EFT\Records\DueDate;
 use Baytek\Commerce\EFT\Records\CustomValue;
-use Baytek\Commerce\EFT\Records\InstitutionTransit;
+use Baytek\Commerce\EFT\Records\Institution;
+use Baytek\Commerce\EFT\Records\Transit;
 use Baytek\Commerce\EFT\Records\AccountNumber;
 use Baytek\Commerce\EFT\Records\Amount;
 
