@@ -2,7 +2,7 @@
 
 namespace Baytek\Commerce\EFT\Records;
 
-use Baytek\Commerce\EFT\Validators\NumberValidator;
+use Baytek\Commerce\EFT\Validators\NumericValidator;
 
 class TransactionCount extends Record
 {
@@ -15,7 +15,7 @@ class TransactionCount extends Record
     {
         $this->position = $position;
         $this->size = 8;
-        $this->validator = new NumberValidator();
+        $this->validator = new NumericValidator();
     }
 
     /**
