@@ -4,7 +4,7 @@ namespace Baytek\Commerce\EFT\Records;
 
 use Baytek\Commerce\EFT\Validators\NumericValidator;
 
-class InstitutionTransit extends Record
+class Institution extends Record
 {
     /**
      * Originator ID constructor
